@@ -4,10 +4,10 @@ const Header = () => {
   return (
     <div>
       <h1 className={headerStyles.title}>
-        <span>Roels</span> News
+        <span>Roels</span> Duijsings
       </h1>
       <p className={headerStyles.description}>
-        Stay up to date with all news about Roel Duijsings
+        This is the personal website of Roel Duijsings
       </p>
     </div>
   );
