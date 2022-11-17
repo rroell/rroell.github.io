@@ -5,10 +5,6 @@ import { server } from "../config";
 export default function Home({ articles }) {
   return (
     <div>
-      <Head>
-        <title>Roel's Website</title>
-        <meta name="keywords" content="web development, programming, Roel" />
-      </Head>
       <ArticleList articles={articles} />
     </div>
   );

@@ -1,13 +1,10 @@
-import Head from "next/head";
+import Meta from "../components/Meta";
 
 const about = () => {
   return (
     <div>
-      <Head>
-        <title>About Roel</title>
-        <meta name="keywords" content="web development, programming, Roel" />
-      </Head>
-      <h1>About page</h1>
+      <Meta title="Roel Duijsings - About" />
+      <h1>About</h1>
     </div>
   );
 };
