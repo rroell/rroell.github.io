@@ -26,4 +26,10 @@ export const articles = [
       "When app stores entered the mainstream tech culture, they exposed developers to an audience of millions...",
     body: "We can’t get enough of our mobile apps. There were 204 billion apps downloads last year, and that number is rising in 2020.  When app stores entered the mainstream tech culture, they exposed developers to an audience of millions who were keen to adopt the innovative capabilities",
   },
+  {
+    id: "5",
+    title: "Deze titel is geschreven door Roel",
+    excerpt: "Toen Roel deze excerpt schreef...",
+    body: "Dit is de body van het artikel. Hier kun je een verhaal vertellen dat je graag met de rest van de wereld wilt delen.",
+  },
 ];
