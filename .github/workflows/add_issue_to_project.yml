@@ -16,5 +16,3 @@ jobs:
           # to the issue
           project-url: https://github.com/users/rroell/projects/1
           github-token: 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
-          labeled: bug, needs-triage
-          label-operator: OR
