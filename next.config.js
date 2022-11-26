@@ -10,7 +10,7 @@
 
 module.exports = {
   // assetPrefix: isProd ? '/rroell.github.io/' : '',
-  images: {
-    unoptimized: true,
-  },
+  // images: {
+  //   unoptimized: true,
+  // },
 };
