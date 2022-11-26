@@ -12,7 +12,7 @@ export default function Home({ articles }) {
 
 // get static articles from the data.js file using API
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/articles`);
+  const res = await fetch(`${server}/data.js`);
   const articles = await res.json();
   return {
     props: { articles },
