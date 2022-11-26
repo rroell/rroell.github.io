@@ -10,22 +10,24 @@ export default function Home({ articles }) {
   );
 }
 
-// get static articles from the data.js file using API
-export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/articles`);
-  const articles = await res.json();
-  return {
-    props: { articles },
-  };
-};
-
-// // get static articles from the internet as an example
+// // get static articles from the data.js file using API
 // export const getStaticProps = async () => {
 //   const res = await fetch(
-//     `https://jsonplaceholder.typicode.com/posts?_limit=6`
+//     `https://github.com/rroell/rroell.github.io/blob/main/data.js`
 //   );
 //   const articles = await res.json();
 //   return {
 //     props: { articles },
 //   };
 // };
+
+// get static articles from the internet as an example
+export const getStaticProps = async () => {
+  const res = await fetch(
+    `https://github.com/rroell/rroell.github.io/blob/main/data.js`
+  );
+  const articles = await res.json();
+  return {
+    props: { articles },
+  };
+};
