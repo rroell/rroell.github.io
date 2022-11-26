@@ -15,4 +15,4 @@ jobs:
           # You can target a repository in a different organization
           # to the issue
           project-url: https://github.com/users/rroell/projects/1
-          github-token: GITHUB_TOKEN
+          github-token: ${{ secrets.TOKEN }}
