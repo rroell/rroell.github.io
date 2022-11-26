@@ -15,4 +15,4 @@ jobs:
           # You can target a repository in a different organization
           # to the issue
           project-url: https://github.com/users/rroell/projects/1
-          github-token: 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
+          github-token: GITHUB_TOKEN
