@@ -11,25 +11,25 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import { Icon } from "@mui/material";
+import styles from "../styles/Nav.module.css";
 
-const pages = ["contact", "about", "cv"];
+const pages = ["about", "cv", "contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Navigation() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
+  const handleOpenNavMenu = (e) => {
+    setAnchorElNav(e.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
+  const handleOpenUserMenu = (e) => {
+    setAnchorElUser(e.currentTarget);
   };
 
-    const handleCloseNavMenu = () => {
-      console.log("Pagina geklikt")
+  const handleCloseNavMenu = (e) => {
+    console.log(e.target);
     setAnchorElNav(null);
   };
 
@@ -42,31 +42,37 @@ function Navigation() {
       {/* Computer screen */}
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          <Icon>
-            <img src="/Favicon_blank_wit.png" width={20} height={25} />
-          </Icon>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            ROEL DUIJSINGS
-          </Typography>
+          {/* LOGO */}
+          <a component="a" href="/" className={styles["logo"]}>
+            <Icon>
+              <img
+                // className={styles.logo}
+                src="network.png"
+                width={25}
+                height={25}
+              />
+            </Icon>
+
+            <Typography
+              variant="h6"
+              noWrap
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "Georgia",
+                fontWeight: 400,
+                letterSpacing: ".2rem",
+                color: "inherit",
+                textDecoration: "none",
+                paddingLeft: ".6rem",
+              }}
+            >
+              ROEL DUIJSINGS
+            </Typography>
+          </a>
 
           {/* Smartphone screen */}
 
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
           {/* Title */}
           <Typography
             variant="h5"
@@ -87,17 +93,27 @@ function Navigation() {
             ROEL DUIJSINGS
           </Typography>
 
+          {/* NavMenu */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
+                className={styles["button"]}
                 key={page}
+                href={"/" + page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  textAlign: "center",
+                }}
               >
                 {page}
               </Button>
             ))}
           </Box>
+
+          {/* Avatar */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -134,13 +150,11 @@ function Navigation() {
               ))}
             </Menu>
           </Box>
+
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar
-                  alt="A"
-                  src="images/avatar.jpg"
-                />
+                <Avatar alt="A" src="avatar.jpg" />
               </IconButton>
             </Tooltip>
             <Menu

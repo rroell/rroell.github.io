@@ -8,12 +8,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Meta />
-      <Navigation/>
+      <Navigation />
+      {/* <Header /> */}
       <div className={styles.container}>
-        <main className={styles.main}>
-          <Header />
-          {children}
-        </main>
+        <main className={styles.main}>{children}</main>
       </div>
     </>
   );
