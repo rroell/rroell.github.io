@@ -1,9 +1,12 @@
-import React from 'react'
+import Meta from "../components/Meta";
 
 const cv = () => {
   return (
-    <div>cv</div>
-  )
-}
+    <div>
+      <Meta title="Roel Duijsings - About" />
+      <h1>CV</h1>
+    </div>
+  );
+};
 
-export default cv
+export default cv;

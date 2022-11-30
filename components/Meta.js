@@ -16,7 +16,7 @@ const Meta = ({ title, keywords, description }) => {
 Meta.defaultProps = {
   title: "Roel Duijsings",
   keywords:
-    "web development, programming, Duijsings, student, Radboud University, Artificial Intelligence",
+    "web development, programming, Duijsings, student, Radboud University, Artificial Intelligence, Data Science, Software Product",
   description: "This is the personal website of Roel Duijsings",
 };
 
