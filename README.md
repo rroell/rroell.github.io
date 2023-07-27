@@ -1,6 +1,6 @@
 # Personal website of Roel Duijsings 
 
-Welcome to my personal website repository. To visit my website click [here](rroell.github.io)!
+Welcome to my personal website repository. To visit my website click [here](www.rroell.github.io)!
 
 On this website you can see;
 * my CV, 
