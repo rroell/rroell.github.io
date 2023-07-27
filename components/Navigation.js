@@ -12,10 +12,10 @@ const pages = ["about", "cv", "contact"];
 
 function Navigation() {
 
-  const handleCloseNavMenu = (e) => {
-    console.log(e.target);
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = (e) => {
+  //   console.log(e.target);
+  //   // setAnchorElNav(null);
+  // };
 
   return (
     <AppBar position="static">
@@ -23,7 +23,7 @@ function Navigation() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* LOGO */}
-          <a component="a" href="/" className={styles["logo"]}>
+          <a href="/" className={styles["logo"]}>
             <Icon>
               <img
                 // className={styles.logo}
@@ -42,7 +42,7 @@ function Navigation() {
                 fontFamily: "Georgia",
                 fontWeight: 400,
                 letterSpacing: ".2rem",
-                color: "inherit",
+                color: "white",
                 textDecoration: "none",
                 paddingLeft: ".6rem",
               }}
@@ -51,28 +51,6 @@ function Navigation() {
             </Typography>
           </a>
 
-          {/* Smartphone screen */}
-
-          {/* Title */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".1rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            ROEL DUIJSINGS
-          </Typography>
-
           {/* NavMenu */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -80,7 +58,7 @@ function Navigation() {
                 className={styles["button"]}
                 key={page}
                 href={"/" + page}
-                onClick={handleCloseNavMenu}
+                // onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
                   color: "white",

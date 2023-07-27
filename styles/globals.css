@@ -1,14 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+
+/* use Raleway for other elements, e.g., headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro";
+  /* , sans-serif; */
+}
+
+h1.notop {
+  margin-top: 0;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Raleway";
+  /* , sans-serif; */
+  /* -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: grey;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+}
+a:hover{
+  color: black;
+  text-decoration: dotted;
 }
 
 * {
@@ -24,5 +49,3 @@ a {
     background: rgb(246, 245, 239);
   }
 }
-
-

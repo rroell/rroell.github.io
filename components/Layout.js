@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
           <Sidebar />
         </Grid>
 
-        <Grid item xs={8}>
+        <Grid item xs={9}>
           <div className={styles.container}>
             <main className={styles.main}>{children}</main>
           </div>

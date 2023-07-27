@@ -1,23 +1,28 @@
 import Link from "next/link";
 import React from "react";
 
-// import Main from "../layouts/Main";
 const Index = () => (
-  <div>
-    <article className="title">
-      <h2>
-        <Link href="/">About this site</Link>
-      </h2>
-      <p>
-        Welcome to my website. Please feel free to read more{" "}
-        <Link href="/about">about me</Link>, or you can check out my{" "}
-        <Link href="/resume">resume</Link>,{" "}
-        <Link href="/projects">projects</Link>, view{" "}
-        <Link href="/stats">site statistics</Link>, or{" "}
-        <Link href="/contact">contact</Link> me.
-      </p>
-    </article>
-  </div>
+  <article className="title">
+    <h1 className="notop">Welcome to my personal website</h1>
+
+    <p>
+      Hi, I'm Roel Duijsings, a passionate student MSc Artificial Intelligence
+      based in Nijmegen, The Netherlands. I specialize in Machine Learning and
+      Data Science. I am deeply passionate about designing and developing
+      innovative products that have a positive impact on our society and promote
+      ecological sustainability.
+    </p>
+
+    <p>
+      This website is a platform where I share my projects, research and some
+      fun stuff. Feel free to browse through my work and know more about me.
+    </p>
+
+    <p>
+      If you're interested in my work or wish to collaborate, don't hesitate to{" "}
+      <Link href="/contact">contact</Link> me.
+    </p>
+  </article>
 );
 
 export default Index;
