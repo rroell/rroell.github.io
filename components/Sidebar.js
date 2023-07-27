@@ -1,13 +1,17 @@
 import React from "react";
-import { Grid } from "@mui/material";
-const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../styles/Sidebar.module.css";
 
 const Sidebar = () => {
   return (
     <section id="intro">
-      <a /* class="logo" */ href="/">
-        <img src={`me.jpg`} alt="" /> {/* ${PUBLIC_URL}/images/  */}
-      </a>
+      <Link href="/">
+        <div className={styles.logo}>
+          <Image src="/me.jpg" alt="" width={300} height={300} />
+        </div>
+      </Link>
+
       <header>
         <h2>Roel Duijsings</h2>
         <p>

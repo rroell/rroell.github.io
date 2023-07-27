@@ -114,7 +114,7 @@ function Navigation() {
           </Box>
 
           {/* Avatar */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          {/* <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -149,9 +149,9 @@ function Navigation() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
 
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="A" src="avatar.jpg" />
@@ -179,7 +179,7 @@ function Navigation() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
