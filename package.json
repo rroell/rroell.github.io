@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build", 
+    "!!!!!! npm run deploy om de website te updaten":"",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

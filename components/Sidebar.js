@@ -3,8 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Sidebar.module.css";
 
-const Sidebar = () => {
-  return (
+const Sidebar = () => (
     <section id="intro">
       <Link href="/">
         <div className={styles.logo}>
@@ -20,6 +19,5 @@ const Sidebar = () => {
       </header>
     </section>
   );
-};
 
 export default Sidebar;

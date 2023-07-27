@@ -1,4 +1,3 @@
-import Header from "./Header";
 import styles from "../styles/Layout.module.css";
 import Meta from "./Meta";
 import Navigation from "./Navigation";
@@ -11,14 +10,22 @@ const Layout = ({ children }) => {
     <>
       <Meta />
       <Navigation />
-      {/* <Header /> */}
-      <Grid container component="main" sx={{ height: "100vh" }}>
-        {/* <CssBaseline /> */}
-        <Sidebar />
+      <Grid
+        container
+        component="main"
+        sx={{ height: "100vh", marginTop: "40px"}}
+      >
+        <Grid item xs={0.5} />
 
-        <div className={styles.container}>
-          <main className={styles.main}>{children}</main>
-        </div>
+        <Grid item xs={2}>
+          <Sidebar />
+        </Grid>
+
+        <Grid item xs={8}>
+          <div className={styles.container}>
+            <main className={styles.main}>{children}</main>
+          </div>
+        </Grid>
       </Grid>
     </>
   );

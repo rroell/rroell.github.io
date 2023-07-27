@@ -14,7 +14,7 @@ const contact = () => {
         <IconButton color="primary" sx={{ p: "10px" }} aria-label="directions">
           <AlternateEmailIcon />
         </IconButton>
-        Email: roel.duijsings@hotmail.com
+        roel.duijsings@hotmail.com
       </a>
       <br></br>
       <br></br>
@@ -22,7 +22,7 @@ const contact = () => {
         <IconButton color="primary" sx={{ p: "10px" }} aria-label="directions">
           <ContactPhoneIcon />
         </IconButton>{" "}
-        Phone: +31645650926{" "}
+        +31645650926{" "}
       </a>
       <br></br>
       <br></br>
